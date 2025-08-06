@@ -46,7 +46,7 @@ function verificarChute() {
 verificarMensagemInicial()
 
 function gerarNumeroAleatorio() {
-    let numeroEscolhido =  parseInt(Math.random() * 100 + 1);
+    let numeroEscolhido =  parseInt(Math.random() * numeroLimite + 1);
     let quantidadeDeElementosNalista = listaDeNumerosSorteados.length;
 
     if(quantidadeDeElementosNalista == numeroLimite) {
