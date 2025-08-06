@@ -1,5 +1,5 @@
 let listaDeNumerosSorteados = [];
-let numeroLimite = 10;
+let numeroLimite = 100;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
@@ -7,7 +7,7 @@ let tentativas = 1;
 //titulo.innerHTML = 'Jogo do número secreto';
 
 //let paragrafo = document.querySelector('p');
-//paragrafo.innerHTML = 'Escolha um número entre 1 e 10:'
+//paragrafo.innerHTML = 'Escolha um número entre 1 e 100:'
 
 //Outra forma de escrever Sempre que temos padrão de código ou um código muito parecido, onde apenas alguns detalhes são modificados, podemos isolar esse comportamento em uma função.
 
@@ -20,7 +20,7 @@ function verificarTextoNaTela(tag, texto) {
 function verificarMensagemInicial(){
 
     verificarTextoNaTela('h1', 'Jogo do número secreto');
-    verificarTextoNaTela('p', 'Escolha um número entre 1 e 10:');
+    verificarTextoNaTela('p', 'Escolha um número entre 1 e 100:');
 }
     
 
@@ -46,7 +46,7 @@ function verificarChute() {
 verificarMensagemInicial()
 
 function gerarNumeroAleatorio() {
-    let numeroEscolhido =  parseInt(Math.random() * 10 + 1);
+    let numeroEscolhido =  parseInt(Math.random() * 100 + 1);
     let quantidadeDeElementosNalista = listaDeNumerosSorteados.length;
 
     if(quantidadeDeElementosNalista == numeroLimite) {
